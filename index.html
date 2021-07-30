@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint Grid</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/script.js" />
+  </head>
+  <body>
+    <div class="titleContainer">
+      <h1>PAINT GRID</h1>
+    </div>
+    <div class="colorsContainer">
+      <div class="colorBox red" id="red"></div>
+      <div class="colorBox black" id="black"></div>
+      <div class="colorBox white" id="white"></div>
+      <div class="colorBox yellow" id="yellow"></div>
+      <div class="colorBox green" id="green"></div>
+      <div class="colorBox brown" id="brown"></div>
+      <div class="colorBox purple" id="purple"></div>
+      <div class="colorBox peru" id="peru"></div>
+    </div>
+    <div class="sentence">
+      <h3>
+        El color seleccionado es:
+        <strong id="selected-color"></strong>
+      </h3>
+    </div>
+    <table class="table">
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-1-1"></td>
+        <td class="tableSpace" id="s-1-2"></td>
+        <td class="tableSpace" id="s-1-3"></td>
+        <td class="tableSpace" id="s-1-4"></td>
+        <td class="tableSpace" id="s-1-5"></td>
+        <td class="tableSpace" id="s-1-6"></td>
+        <td class="tableSpace" id="s-1-7"></td>
+        <td class="tableSpace" id="s-1-8"></td>
+        <td class="tableSpace" id="s-1-9"></td>
+        <td class="tableSpace" id="s-1-10"></td>
+        <td class="tableSpace" id="s-1-11"></td>
+        <td class="tableSpace" id="s-1-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-2-1"></td>
+        <td class="tableSpace" id="s-2-2"></td>
+        <td class="tableSpace" id="s-2-3"></td>
+        <td class="tableSpace" id="s-2-4"></td>
+        <td class="tableSpace" id="s-2-5"></td>
+        <td class="tableSpace" id="s-2-6"></td>
+        <td class="tableSpace" id="s-2-7"></td>
+        <td class="tableSpace" id="s-2-8"></td>
+        <td class="tableSpace" id="s-2-9"></td>
+        <td class="tableSpace" id="s-2-10"></td>
+        <td class="tableSpace" id="s-2-11"></td>
+        <td class="tableSpace" id="s-2-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-3-1"></td>
+        <td class="tableSpace" id="s-3-2"></td>
+        <td class="tableSpace" id="s-3-3"></td>
+        <td class="tableSpace" id="s-3-4"></td>
+        <td class="tableSpace" id="s-3-5"></td>
+        <td class="tableSpace" id="s-3-6"></td>
+        <td class="tableSpace" id="s-3-7"></td>
+        <td class="tableSpace" id="s-3-8"></td>
+        <td class="tableSpace" id="s-3-9"></td>
+        <td class="tableSpace" id="s-3-10"></td>
+        <td class="tableSpace" id="s-3-11"></td>
+        <td class="tableSpace" id="s-3-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-4-1"></td>
+        <td class="tableSpace" id="s-4-2"></td>
+        <td class="tableSpace" id="s-4-3"></td>
+        <td class="tableSpace" id="s-4-4"></td>
+        <td class="tableSpace" id="s-4-5"></td>
+        <td class="tableSpace" id="s-4-6"></td>
+        <td class="tableSpace" id="s-4-7"></td>
+        <td class="tableSpace" id="s-4-8"></td>
+        <td class="tableSpace" id="s-4-9"></td>
+        <td class="tableSpace" id="s-4-10"></td>
+        <td class="tableSpace" id="s-4-11"></td>
+        <td class="tableSpace" id="s-4-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-5-1"></td>
+        <td class="tableSpace" id="s-5-2"></td>
+        <td class="tableSpace" id="s-5-3"></td>
+        <td class="tableSpace" id="s-5-4"></td>
+        <td class="tableSpace" id="s-5-5"></td>
+        <td class="tableSpace" id="s-5-6"></td>
+        <td class="tableSpace" id="s-5-7"></td>
+        <td class="tableSpace" id="s-5-8"></td>
+        <td class="tableSpace" id="s-5-9"></td>
+        <td class="tableSpace" id="s-5-10"></td>
+        <td class="tableSpace" id="s-5-11"></td>
+        <td class="tableSpace" id="s-5-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-6-1"></td>
+        <td class="tableSpace" id="s-6-2"></td>
+        <td class="tableSpace" id="s-6-3"></td>
+        <td class="tableSpace" id="s-6-4"></td>
+        <td class="tableSpace" id="s-6-5"></td>
+        <td class="tableSpace" id="s-6-6"></td>
+        <td class="tableSpace" id="s-6-7"></td>
+        <td class="tableSpace" id="s-6-8"></td>
+        <td class="tableSpace" id="s-6-9"></td>
+        <td class="tableSpace" id="s-6-10"></td>
+        <td class="tableSpace" id="s-6-11"></td>
+        <td class="tableSpace" id="s-6-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-7-1"></td>
+        <td class="tableSpace" id="s-7-2"></td>
+        <td class="tableSpace" id="s-7-3"></td>
+        <td class="tableSpace" id="s-7-4"></td>
+        <td class="tableSpace" id="s-7-5"></td>
+        <td class="tableSpace" id="s-7-6"></td>
+        <td class="tableSpace" id="s-7-7"></td>
+        <td class="tableSpace" id="s-7-8"></td>
+        <td class="tableSpace" id="s-7-9"></td>
+        <td class="tableSpace" id="s-7-10"></td>
+        <td class="tableSpace" id="s-7-11"></td>
+        <td class="tableSpace" id="s-7-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-8-1"></td>
+        <td class="tableSpace" id="s-8-2"></td>
+        <td class="tableSpace" id="s-8-3"></td>
+        <td class="tableSpace" id="s-8-4"></td>
+        <td class="tableSpace" id="s-8-5"></td>
+        <td class="tableSpace" id="s-8-6"></td>
+        <td class="tableSpace" id="s-8-7"></td>
+        <td class="tableSpace" id="s-8-8"></td>
+        <td class="tableSpace" id="s-8-9"></td>
+        <td class="tableSpace" id="s-8-10"></td>
+        <td class="tableSpace" id="s-8-11"></td>
+        <td class="tableSpace" id="s-8-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-9-1"></td>
+        <td class="tableSpace" id="s-9-2"></td>
+        <td class="tableSpace" id="s-9-3"></td>
+        <td class="tableSpace" id="s-9-4"></td>
+        <td class="tableSpace" id="s-9-5"></td>
+        <td class="tableSpace" id="s-9-6"></td>
+        <td class="tableSpace" id="s-9-7"></td>
+        <td class="tableSpace" id="s-9-8"></td>
+        <td class="tableSpace" id="s-9-9"></td>
+        <td class="tableSpace" id="s-9-10"></td>
+        <td class="tableSpace" id="s-9-11"></td>
+        <td class="tableSpace" id="s-9-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-10-1"></td>
+        <td class="tableSpace" id="s-10-2"></td>
+        <td class="tableSpace" id="s-10-3"></td>
+        <td class="tableSpace" id="s-10-4"></td>
+        <td class="tableSpace" id="s-10-5"></td>
+        <td class="tableSpace" id="s-10-6"></td>
+        <td class="tableSpace" id="s-10-7"></td>
+        <td class="tableSpace" id="s-10-8"></td>
+        <td class="tableSpace" id="s-10-9"></td>
+        <td class="tableSpace" id="s-10-10"></td>
+        <td class="tableSpace" id="s-10-11"></td>
+        <td class="tableSpace" id="s-10-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-11-1"></td>
+        <td class="tableSpace" id="s-11-2"></td>
+        <td class="tableSpace" id="s-11-3"></td>
+        <td class="tableSpace" id="s-11-4"></td>
+        <td class="tableSpace" id="s-11-5"></td>
+        <td class="tableSpace" id="s-11-6"></td>
+        <td class="tableSpace" id="s-11-7"></td>
+        <td class="tableSpace" id="s-11-8"></td>
+        <td class="tableSpace" id="s-11-9"></td>
+        <td class="tableSpace" id="s-11-10"></td>
+        <td class="tableSpace" id="s-11-11"></td>
+        <td class="tableSpace" id="s-11-12"></td>
+      </tr>
+      <tr class="tableRow">
+        <td class="tableSpace" id="s-12-1"></td>
+        <td class="tableSpace" id="s-12-2"></td>
+        <td class="tableSpace" id="s-12-3"></td>
+        <td class="tableSpace" id="s-12-4"></td>
+        <td class="tableSpace" id="s-12-5"></td>
+        <td class="tableSpace" id="s-12-6"></td>
+        <td class="tableSpace" id="s-12-7"></td>
+        <td class="tableSpace" id="s-12-8"></td>
+        <td class="tableSpace" id="s-12-9"></td>
+        <td class="tableSpace" id="s-12-10"></td>
+        <td class="tableSpace" id="s-12-11"></td>
+        <td class="tableSpace" id="s-12-12"></td>
+      </tr>
+    </table>
+    <div class="buttonContainer">
+      <button class="buttonReset">Reset</button>
+    </div>
+    <footer>
+      <h4>
+        🥑 Hecho con 💚 por ALEX 🦁
+      </h4>
+    </footer>
+  </body>
+</html>
